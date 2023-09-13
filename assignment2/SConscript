@@ -1,0 +1,14 @@
+# Import necessary gem5 modules
+Import('*')
+
+
+# Register SimObjects
+SimObject('VectorOperations.py', sim_objects=['VectorOperations'])
+Source('VectorOperations.cc')
+
+# Register DEBUG flags
+DebugFlag('VECTOR')
+DebugFlag('RESULTCROSS')
+DebugFlag('NORMALIZE')
+DebugFlag('RESULTSUB')
+
